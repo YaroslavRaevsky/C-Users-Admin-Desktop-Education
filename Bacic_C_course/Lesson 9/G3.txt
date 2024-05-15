@@ -1,0 +1,33 @@
+Вопрос по G3. В файле input.txt дана строка из 1000 символов. Показать номера символов, совпадающих с последним символом строки. Результат записать в файл output.txt
+
+Вроде бы все выводит как надо, но на что-то ругается, может кто-то увидит что не так?)
+
+#include <stdio.h>
+
+int main(void){
+    FILE *f_in, *f_out;
+    f_in = fopen("input.txt", "r");
+    f_out = fopen("output.txt", "w");
+    char input, lastLetter;
+    int pos = 0, lastPos = -1;
+    
+    while (fscanf(f_in, "%c", &input) == 1)
+    {
+        lastPos++;
+    }
+    
+    fseek(f_in, -1, SEEK_END);
+    fscanf(f_in, "%c", &lastLetter);
+    fseek(f_in, 0, SEEK_SET);
+
+    while (fscanf(f_in, "%c", &input) == 1)
+    {
+        if ((input == lastLetter) && (pos != lastPos))    fprintf(f_out, "%d ", pos);
+        pos++;
+    }
+
+    fclose(f_in);
+    fclose(f_out);
+
+    return 0; 
+}

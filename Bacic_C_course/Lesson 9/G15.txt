@@ -1,0 +1,88 @@
+Всем привет. Задача G15. В файле input.txt дано предложение. Необходимо заменить все имена «Cao» на «Ling» и записать результат в файл output.txt. Не пойму, почему гульден не принимает. #include <stdio.h>
+
+int main()
+{
+  FILE *f, *f_out;
+  char cao[3] = {'C', 'a', 'o'};
+  char ling[4] = {'L', 'i', 'n', 'g'};
+  char simbol;
+    
+  f = fopen("input.txt", "r");
+  f_out = fopen("output.txt", "w");  
+  
+  int i = 0;
+  while (fscanf(f, "%c", &simbol) == 1) {
+    if (simbol == '\n') continue;
+    if (simbol == cao[i]) {
+      i++;
+      }
+    else {
+      i = 0;
+      fprintf(f_out, "%c", simbol);
+      }
+    if (i == 3) {
+      for (int j = 0; j < 4; j++) {
+        fprintf(f_out, "%c", ling[j]);
+        }
+      i = 0;
+      }
+    }
+    
+  fclose(f);  
+  fclose(f_out);  
+  
+  return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+  FILE *f, *f_out;
+  char cao[3] = {'C', 'a', 'o'};
+  char ling[4] = {'L', 'i', 'n', 'g'};
+  char simbol;
+    
+  f = fopen("input.txt", "r");
+  f_out = fopen("output.txt", "w");  
+  
+  int i = 0;
+  while (fscanf(f, "%c", &simbol) == 1) {
+    //if (simbol == '\n') continue;
+    if (simbol == cao[i]) {
+      i++;
+      }
+    else {
+      fseek(f, -(i + 1), SEEK_CUR);
+      for (int j = 0; j <= i; j++) {
+        fscanf(f, "%c", &simbol);
+        fprintf(f_out, "%c", simbol);
+        }
+      i = 0;
+      }
+    if (i == 3) {
+      for (int j = 0; j < 4; j++) {
+        fprintf(f_out, "%c", ling[j]);
+        }
+      i = 0;
+      }
+    }
+    
+  fclose(f);  
+  fclose(f_out);  
+  
+  return 0;
+}
+
+
+
+
+if (str[i] == 'C' && str[i+1] == 'a' && str[i+2] == 'o')
+
+
+

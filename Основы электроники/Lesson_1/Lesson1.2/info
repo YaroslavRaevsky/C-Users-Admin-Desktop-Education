@@ -1,0 +1,99 @@
+{
+  "uuid": "f5273f0e7b794bfde429878e044f1861",
+  "path": "Offline/Lesson1.2",
+  "name": "Lesson1.2",
+  "content": "",
+  "created_at": "2022-12-04 12:35:08",
+  "updated_at": "2022-12-04 12:35:08",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "5544c185193789bc42f194b25fdfa94e",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "18479f1c4d4749c5a4c4387846c5d657": 1,
+        "151fbbe3baad4d41ae7d5b5e5e0fd839": 1,
+        "8850ffcdb9d242a1b431d4a3e2209db1": 1,
+        "67082a4ee642ac71e2dcdf6758d8dd66": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "CR1220-2",
+          1,
+          "BAT-SMD_CR1220-2",
+          "B1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "Q&J",
+            "BOM_Manufacturer Part": "CR1220-2",
+            "BOM_Supplier Part": "C70381",
+            "puuid": "ad4cf9a98ad04c21832cf27a15f0d202",
+            "uuid": "67082a4ee642ac71e2dcdf6758d8dd66"
+          }
+        ],
+        [
+          "K4-6×6_TH",
+          1,
+          "KEY-TH_4P-L6.0-W6.0-P4.50-LS6.5",
+          "KEY2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C136684",
+            "BOM_Manufacturer": "韩国韩荣",
+            "BOM_Manufacturer Part": "K2-1102DP-E4SW-04",
+            "puuid": "557c105168d444a992e25584f55bcbb2",
+            "uuid": "18479f1c4d4749c5a4c4387846c5d657"
+          }
+        ],
+        [
+          "LED-TH-5mm_R",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED1",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "680",
+          1,
+          "R_AXIAL-1.0",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "dd710703be1e4fec99153f373fdbc90f",
+            "uuid": "151fbbe3baad4d41ae7d5b5e5e0fd839"
+          }
+        ]
+      ],
+      "updateTime": 1670146508,
+      "createTime": 1670146508,
+      "histories": [],
+      "created_at": "2022-12-04 12:35:08",
+      "updated_at": "2022-12-04 12:35:08"
+    }
+  ],
+  "sort": [],
+  "title": "Lesson1.2",
+  "foldername": "Lesson1.2",
+  "schfilename": "Lesson1.2.json",
+  "schfilemtime": 1670146508264
+}
